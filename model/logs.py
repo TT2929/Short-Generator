@@ -40,7 +40,7 @@ def append_labeled_segments_to_log(segment_csv: str, selected_filename: str, log
 
 if __name__ == '__main__':
 
-    base_directory = Path("/home/kondo.hayate/program/Short-Generator")
+    base_directory = Path("")
 
     #output-folder
     output_folder = Path( base_directory / "Output" )
