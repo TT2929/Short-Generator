@@ -1,11 +1,6 @@
 from yt_dlp import YoutubeDL
 from pathlib import Path
 import os
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["VECLIB_NUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
 from moviepy.editor import VideoFileClip, AudioFileClip
 import csv
 import json
@@ -399,13 +394,13 @@ def parallel_segment_process(segments, input_mp3_path, output_folder):
 
 #Write URL that you want to have short movie
 ####################################################################################################
-create_URL = "https://www.youtube.com/live/rQ8v_iyRs6Y?si=K_QZvef0mLvgmHU-"
-video_id = "vid188"
+create_URL = ""
+video_id = "vid189"
 ####################################################################################################
 
 if __name__ == '__main__':
     #base_directory
-    base_directory = Path("/home/kondo.hayate/program/Short-Generator")
+    base_directory = Path("")
 
     #output-folder
     output_folder = Path( base_directory / "Output" )
