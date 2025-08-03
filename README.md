@@ -15,6 +15,7 @@ Build your environment using the myenv.yml file
 
 ## Usage
 
+Set your directory as the base_directory in all code.
 Paste the URL for which you want to create a short video into the part enclosed in ## inside main.py. The archive of the live broadcast you paste here must contain the live chat. We also recommend changing the video number to preserve the video's features and use them for the next training.
 This code automatically determines whether the video you created is interesting or not, and labels it to help with the next training. The threshold for whether it is interesting or not is 0.5. You can change it as you like.
 The created video will be output to the Output folder.
