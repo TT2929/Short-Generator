@@ -7,12 +7,6 @@ import joblib
 
 
 def study_model():
-    #base_directory
-    base_directory = Path("/home/kondo.hayate/program/Short-Generator")
-
-    #output-folder
-    output_folder = Path( base_directory / "Output" )
-    output_folder.mkdir(exist_ok=True)
 
     df = pd.read_csv(output_folder / "logs" / "labeled_log.csv")
 
@@ -35,7 +29,7 @@ def study_model():
 
 
 #base_directory
-base_directory = Path("/home/kondo.hayate/program/Short-Generator")
+base_directory = Path("")
 
 #output-folder
 output_folder = Path( base_directory / "Output" )
